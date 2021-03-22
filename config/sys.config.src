@@ -5,4 +5,13 @@
 
 , {nxo_template, [{path, [{priv_dir, myapp, "dtl"}]}]}
 
+, {nxo_db,
+   [{pools, [#{name => db,
+               host => "db",
+               user => "myapp_user",
+               pass => fun myapp:db_pass/1,
+               database => "myapp_db"}]}
+
+   ]}
+
 ].
