@@ -1,0 +1,8 @@
+%% -*- mode: erlang -*-
+
+[
+ {myapp, [{development_mode, ${DEVELOPMENT_MODE}}]}
+
+, {nxo_template, [{path, [{priv_dir, myapp, "dtl"}]}]}
+
+].

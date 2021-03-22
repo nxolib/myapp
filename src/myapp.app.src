@@ -1,0 +1,15 @@
+{application, myapp,
+ [{description, "A Docker enabled OTP application."},
+  {vsn, {git, short}},
+  {registered, []},
+  {mod, { myapp_app, []}},
+  {applications,
+   [kernel,
+    stdlib
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {licenses, []},
+  {links, []}
+ ]}.
