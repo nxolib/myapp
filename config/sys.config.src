@@ -13,6 +13,7 @@
                database => "myapp_db"}]},
     {retries, 3},
     {retry_sleep, 400},
+    {default_return, auto},
     {ddl_source, [{priv_dir, myapp, "ddl"}]},
     {sql_source, [{priv_dir, myapp, "sql"}]}
 

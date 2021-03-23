@@ -1,5 +1,14 @@
--- :fancy_one
+-- :everything
+SELECT * FROM ddl_one;
+
+-- :names
 SELECT name FROM ddl_one;
 
--- :fancy_three
-SELECT name FROM ddl_one;
+-- :count
+SELECT count(*) FROM ddl_one;
+
+-- :some_name
+SELECT * FROM ddl_one WHERE name = $1
+
+-- :name_or_value
+SELECT * FROM ddl_one WHERE name = $1 OR value = $1
