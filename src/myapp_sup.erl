@@ -27,6 +27,7 @@ start_link() ->
 %%                  modules => modules()}   % optional
 init([]) ->
   sync:go(),
+  nxo_db:start(),
   SupFlags = #{strategy => one_for_all,
                intensity => 0,
                period => 1},

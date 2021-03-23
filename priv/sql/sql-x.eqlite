@@ -1,0 +1,5 @@
+-- :fancy_one
+SELECT name FROM ddl_one;
+
+-- :fancy_three
+SELECT name FROM ddl_one;

@@ -1,0 +1,5 @@
+-- :filter_one
+SELECT * FROM ddl_one WHERE name = $1
+
+-- :filter_two
+SELECT * FROM ddl_one WHERE value = $1

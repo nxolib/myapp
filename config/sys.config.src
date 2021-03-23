@@ -10,7 +10,11 @@
                host => "db",
                user => "myapp_user",
                pass => fun myapp:db_pass/1,
-               database => "myapp_db"}]}
+               database => "myapp_db"}]},
+    {retries, 3},
+    {retry_sleep, 400},
+    {ddl_source, [{priv_dir, myapp, "ddl"}]},
+    {sql_source, [{priv_dir, myapp, "sql"}]}
 
    ]}
 

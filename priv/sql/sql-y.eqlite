@@ -1,0 +1,5 @@
+-- :plain_one
+SELECT value FROM ddl_one
+
+-- :plain_two
+SELECT value FROM ddl_two
